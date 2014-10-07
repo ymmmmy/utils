@@ -29,4 +29,4 @@ if [ -e "${SAVE_DIR}/${FILE}" ];then
     FILE="${CH}_$DATE_${U_TIME}.flv"
 fi
 
-/usr/local/bin/rtmpdump -r "${URL}" -a "liveedge" -W "https://www.showroom-live.com/assets/swf/ShowRoomLive.swf" -p "https://www.showroom-live.com/${CH}" --live -y "${KEY}" -o "${SAVE_DIR}/${FILE}"
+rtmpdump -r "${URL}" -a "liveedge" -W "https://www.showroom-live.com/assets/swf/ShowRoomLive.swf" -p "https://www.showroom-live.com/${CH}" --live -y "${KEY}" -o "${SAVE_DIR}/${FILE}"
